@@ -1,5 +1,6 @@
 package ru.geekbrains.lesson3.task2;
 
+import java.util.Arrays;
 import java.util.Comparator;
 
 public class SalaryComparator implements Comparator<Employee> {
@@ -20,4 +21,19 @@ public class SalaryComparator implements Comparator<Employee> {
             return -1;
         }*/
     }
+}
+
+class WorkersArray {
+    private Worker[] workers;
+
+    public WorkersArray(Worker[] workers) {
+        this.workers = workers;
+    }
+
+
+    // Метод для сортировки массива работников по заработной плате
+    public void sortByAverageSalary() {
+        Arrays.sort(workers, Comparator.comparing(Worker::calculateSalary));
+    }
+
 }

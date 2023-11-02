@@ -16,14 +16,17 @@ public class EmployeeFabric {
                 names[random.nextInt(names.length)],
                 salary);
     }
+//  public static Freelancer generateFreelancer(){
+//         String[] names = new String[] { "Анатолий", "Глеб", "Клим", "Мартин", "Лазарь", "Владлен", "Клим", "Панкратий", "Рубен", "Герман" };
+//         String[] surnames = new String[] { "Григорьев", "Фокин", "Шестаков", "Хохлов", "Шубин", "Бирюков", "Копылов", "Горбунов", "Лыткин", "Соколов" };
 
+//         int salary = random.nextInt(60000, 120001);
+//         return new Freelancer(
+//                 surnames[random.nextInt(surnames.length)],
+//                 names[random.nextInt(names.length)],
+//                 salary);
+//     }
 
-    /**
-     * TODO: Переработать метод generateEmployees, метод должен генерировать рабочих
-     *  разных типов (Worker, Freelancer) в рамках домашней работы
-     * @param count
-     * @return
-     */
     public static Worker[] generateEmployees(int count){
         Worker[] workers = new Worker[count];
         for (int i = 0; i < count; i++){
@@ -32,4 +35,13 @@ public class EmployeeFabric {
         return workers;
     }
 
-}
+
+    //   public static Freelancer[] generateEmployees(int count){
+    //     Freelancer[] freelancer = new Freelancer[count];
+    //     for (int i = 0; i < count; i++){
+    //         freelancer[i] = generateFreelancer();
+    //     }
+    //     return freelancer;
+    // }
+
+    }
